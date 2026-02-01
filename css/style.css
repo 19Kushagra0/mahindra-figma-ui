@@ -1,15 +1,170 @@
-/* Global fixes */
-* {
-  box-sizing: border-box;
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    color: #FFFCFD;
+}
+button{
+    border: none;
+}
+.header{
+ width: 100%;
+ height: 100px;
+ background-color: transparent;
+ 
+ display: flex;
+ flex-direction: row;
+
+ align-items: center;
+ justify-content: space-between;
+
+ padding: 0px 80px ;
+ position: fixed;
+
+ top: 0px;
+
+ z-index: 10;
+
+ 
 }
 
-/* Example: smooth scrolling */
-html {
-  scroll-behavior: smooth;
+
+.header-call-button{
+    padding: 14px 44px;
+  
+    background-color: red;
+
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+
+   
 }
 
-/* Use this file ONLY for:
-   - Custom animations
-   - Figma-exact spacing edge cases
-   - Rare overrides
-*/
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    /* background-color: blue; */
+
+    background-image: url(../assets/images/hero-bg.png);
+
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+}
+.hero-blur{
+     position: absolute;
+  left: 0;
+  top: 0;
+  width: 43.5%;
+  height: 100%;
+
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.95),
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0)
+  );
+
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,1) 95%,
+    rgba(0,0,0,0) 100%
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,1) 95%,
+    rgba(0,0,0,0) 100%
+  );
+
+}
+.hero-content{
+    width: 55%;
+    height: 100%;
+    /* background-color: red; */
+    
+  z-index: 1;
+
+  
+
+  padding-top: 156px;
+}
+.hero-content-top{
+width: 100%;
+height: 500px;
+/* background-color: blueviolet; */
+
+display: flex;
+flex-direction: column;
+
+align-items: center;
+}
+.hero-content-top h1{
+  display: flex;
+  flex-direction: row;
+}
+.hero-content-top h1 span{
+display: flex;
+flex-direction: row;
+
+ font-family: Playfair Display;
+ font-weight: medium;
+ font-size: 56px;
+ line-height: 120%;
+ letter-spacing: 0%;
+
+ font-style: italic;
+
+}
+.hero-content-top p{
+    
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: medium;
+    font-size: 18px;
+    line-height: 145%;
+    letter-spacing: 16%;
+    
+    
+}
+.hero-content-top span{
+ max-width: 275px;
+ width: 100%;
+ text-align: center; 
+ font-family: "Instrument Sans", sans-serif;
+    font-weight: medium;
+    font-size: 18px;
+    line-height: 145%;
+    letter-spacing: 16%;
+    
+
+
+ 
+ 
+
+}
+.hero-content-bottom{
+
+}
+.hero-image-container{
+    width: 45%;
+    height: 100%;
+  background-color: blue;
+}
