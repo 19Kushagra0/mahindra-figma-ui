@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahindra UI</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Custom Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#E31837", /* Mahindra red (example) */
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom CSS (optional) -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="font-sans text-gray-900">
+
+  <!-- ===== HEADER ===== -->
+  <header class="border-b ">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-bold">Mahindra</h1>
+      <nav class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="#" class="hover:text-primary">Home</a>
+        <a href="#" class="hover:text-primary">Models</a>
+        <a href="#" class="hover:text-primary">About</a>
+        <a href="#" class="hover:text-primary">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- Text -->
+      <div>
+        <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+          Experience the Future of Mobility
+        </h2>
+        <p class="mt-4 text-gray-600 max-w-md">
+          Powerful design. Advanced technology. Built for the future.
+        </p>
+
+        <div class="mt-6 flex gap-4">
+          <button class="bg-primary text-white px-6 py-3 rounded font-semibold">
+            Explore Models
+          </button>
+          <button class="border border-gray-300 px-6 py-3 rounded">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div>
+        <img
+          src="assets/images/hero.png"
+          alt="Mahindra Vehicle"
+          class="w-full object-contain"
+          loading="lazy"
+        />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="border-t">
+    <div class="max-w-7xl mx-auto px-6 py-6 text-sm text-gray-500 text-center">
+      © 2026 Mahindra. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

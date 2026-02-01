@@ -1,0 +1,15 @@
+/* Global fixes */
+* {
+  box-sizing: border-box;
+}
+
+/* Example: smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Use this file ONLY for:
+   - Custom animations
+   - Figma-exact spacing edge cases
+   - Rare overrides
+*/
